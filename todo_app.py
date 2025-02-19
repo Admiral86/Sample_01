@@ -147,6 +147,9 @@ class TodoApp:
         conn.close()
 
 if __name__ == "__main__":
+    # メインウィンドウを作成
     root = ctk.CTk()
+    # TodoAppクラスのインスタンスを作成
     app = TodoApp(root)
+    # イベントループを開始
     root.mainloop() 
