@@ -31,9 +31,9 @@ graph LR
     UC4 -.-> SUB4
 
     %% スタイル設定
-    classDef actor fill:#f9f,stroke:#333,stroke-width:2px
-    classDef usecase fill:#bbf,stroke:#333,stroke-width:2px
-    classDef subcase fill:#ddf,stroke:#333,stroke-width:1px
+    classDef actor fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    classDef usecase fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    classDef subcase fill:#ddf,stroke:#333,stroke-width:1px,color:#000
 
     class User actor
     class UC1,UC2,UC3,UC4 usecase
@@ -46,6 +46,10 @@ graph LR
         note3[タスクを選択して「削除」ボタンをクリック]
         note4[SQLiteデータベースにタスク情報を永続化]
     end
+
+    %% 注釈のスタイル
+    classDef note fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    class note1,note2,note3,note4 note
 
     UC1 --- note1
     UC3 --- note2
